@@ -5,7 +5,7 @@ A small chat app that can run on PythonAnywhere's free tier
 
 ## Features
 - Link sharing
-- File sharing with file.io
+- File sharing with [file.io](https://file.io/)
 - Encrypted messages
 
 ## Dependencies
