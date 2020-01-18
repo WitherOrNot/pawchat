@@ -1,2 +1,4 @@
 # pawchat
-Chat app that works on PythonAnywhere's free tier
+
+![Demo image]
+(https://github.com/WitherOrNot/pawchat/raw/master/demo/demo.png)
