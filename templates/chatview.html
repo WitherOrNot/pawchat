@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}chat{% endblock %}
+{% block body %}
+<script>
+    poll_messages();
+</script>
+<ul id="chatlist" style="padding: 0; list-style-type: none;">
+    {% for message in messages %}
+    <li><strong>{{ message["author"] }}</strong>: {{ message["content"] | safe }}</li>
+    {% endfor %}
+</ul>
+<a id="end">&nbsp;</a>
+{% endblock %}
