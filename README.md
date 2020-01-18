@@ -10,7 +10,9 @@ A small chat app that can run on PythonAnywhere's free tier
 
 ## Dependencies
 Run this command in a PythonAnywhere bash session to grab the dependencies:
-`pip install flask-wtf flask-sqlalchemy flask-login pycrypto`
+```
+pip install flask-wtf flask-sqlalchemy flask-login pycrypto
+```
 
 ## Live demo
 https://pawchat.pythonanywhere.com/
