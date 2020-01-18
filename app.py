@@ -16,8 +16,8 @@ import time
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(24)
-# Edit this line with your username and password
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+# Edit this line with your username and password for MySQL
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://username:password@username.mysql.pythonanywhere-services.com/username$tablename'
 app.config["SQLALCHEMY_POOL_RECYCLE"] = 299
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
