@@ -65,7 +65,7 @@ class RegistrationForm(FlaskForm):
     username = StringField('username', validators=[DataRequired()])
     password = PasswordField('password', validators=[DataRequired()])
     password_verify = PasswordField('verify password', validators=[DataRequired()])
-    submit = SubmitField('login')
+    submit = SubmitField('register')
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
