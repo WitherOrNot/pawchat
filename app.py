@@ -187,15 +187,6 @@ def newmsg():
     db.session.commit()
     return Response(json.dumps(new_msgs_json), mimetype="application/json")
 
-def send_msg(username, message):
-    password_hash = User.query.filter_by(username=username).first().password_hash
-    message = encrypt(password_hash, message)
-    m = Message(author=username, content=message)
-    db.session.add(m)
-    db.session.commit()
-
-
-
 @app.route('/logout')
 @login_required
 def logout():
